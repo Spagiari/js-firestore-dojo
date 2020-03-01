@@ -6,7 +6,13 @@ class ProductRepository extends restoque.FirestoreBaseRepository {
   }
 
   async getByCode(code) {
-    throw new Error('Not implemented yet!');
+    // throw new Error('Not implemented yet!');
+    const queryRef = this.collection.where('code', '==', code);
+    const snapshot = await queryRef.get();
+
+    if (snapshot.empty) throw new Error('Not Found');
+
+    return snapshot.docs[0].data();
   }
 }
 
