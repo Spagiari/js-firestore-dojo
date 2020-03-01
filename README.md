@@ -2,7 +2,9 @@
 
 ---
 
-## Uso
+## Inicialização
+
+Coloque a chave de serviço do firebase em functions/__tests__/helpers/service-account-file.json
 
 ```
 $ npm install
