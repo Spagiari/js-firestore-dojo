@@ -11,7 +11,7 @@ $ npm install
 ## Testes
 
 ```
-$ npm run tests
+$ npm run test
 ```
 
 ## Puzzle
